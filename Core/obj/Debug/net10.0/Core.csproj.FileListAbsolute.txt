@@ -1,0 +1,11 @@
+C:\Users\musta\OneDrive\Desktop\WebSite\Core\bin\Debug\net10.0\Core.deps.json
+C:\Users\musta\OneDrive\Desktop\WebSite\Core\bin\Debug\net10.0\Core.dll
+C:\Users\musta\OneDrive\Desktop\WebSite\Core\bin\Debug\net10.0\Core.pdb
+C:\Users\musta\OneDrive\Desktop\WebSite\Core\obj\Debug\net10.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musta\OneDrive\Desktop\WebSite\Core\obj\Debug\net10.0\Core.AssemblyInfoInputs.cache
+C:\Users\musta\OneDrive\Desktop\WebSite\Core\obj\Debug\net10.0\Core.AssemblyInfo.cs
+C:\Users\musta\OneDrive\Desktop\WebSite\Core\obj\Debug\net10.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\musta\OneDrive\Desktop\WebSite\Core\obj\Debug\net10.0\Core.dll
+C:\Users\musta\OneDrive\Desktop\WebSite\Core\obj\Debug\net10.0\refint\Core.dll
+C:\Users\musta\OneDrive\Desktop\WebSite\Core\obj\Debug\net10.0\Core.pdb
+C:\Users\musta\OneDrive\Desktop\WebSite\Core\obj\Debug\net10.0\ref\Core.dll
