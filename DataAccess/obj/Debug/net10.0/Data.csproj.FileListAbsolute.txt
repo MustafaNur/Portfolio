@@ -15,3 +15,4 @@ C:\Users\musta\OneDrive\Desktop\WebSite\DataAccess\obj\Debug\net10.0\refint\Data
 C:\Users\musta\OneDrive\Desktop\WebSite\DataAccess\obj\Debug\net10.0\Data.pdb
 C:\Users\musta\OneDrive\Desktop\WebSite\DataAccess\obj\Debug\net10.0\Data.genruntimeconfig.cache
 C:\Users\musta\OneDrive\Desktop\WebSite\DataAccess\obj\Debug\net10.0\ref\Data.dll
+C:\Users\musta\OneDrive\Desktop\WebSite\DataAccess\obj\Debug\net10.0\Data.sourcelink.json

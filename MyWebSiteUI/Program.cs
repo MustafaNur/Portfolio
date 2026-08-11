@@ -26,8 +26,12 @@ builder.Services.AddScoped<IServiceService, ServiceManager>();
 builder.Services.AddScoped<ISkillService, SkillManager>();
 
 
+// wwwroot klasörünü fiziksel çalışma dizinine açıkça bağlayın
+builder.WebHost.UseWebRoot(Path.Combine(builder.Environment.ContentRootPath, "wwwroot"));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
 
 var app = builder.Build();
 
@@ -39,7 +43,11 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+
+
 app.UseHttpsRedirection();
+// Statik dosyaların (wwwroot) dışarıya sunulmasını sağlar
+app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();

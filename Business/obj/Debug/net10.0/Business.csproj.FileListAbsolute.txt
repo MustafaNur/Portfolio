@@ -15,3 +15,4 @@ C:\Users\musta\OneDrive\Desktop\WebSite\Business\obj\Debug\net10.0\Business.dll
 C:\Users\musta\OneDrive\Desktop\WebSite\Business\obj\Debug\net10.0\refint\Business.dll
 C:\Users\musta\OneDrive\Desktop\WebSite\Business\obj\Debug\net10.0\Business.pdb
 C:\Users\musta\OneDrive\Desktop\WebSite\Business\obj\Debug\net10.0\ref\Business.dll
+C:\Users\musta\OneDrive\Desktop\WebSite\Business\obj\Debug\net10.0\Business.sourcelink.json
