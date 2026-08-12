@@ -17,6 +17,11 @@ namespace Business.Concrete
             _biographyRepository = biographyRepository;
         }
 
+        public Task<List<Biography>?> GetAllAsync()
+        {
+            throw new NotImplementedException();
+        }
+
         public void TDelete(Biography entity)
         {
             _biographyRepository.Delete(entity);

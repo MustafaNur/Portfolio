@@ -7,19 +7,19 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MyWebSiteUI.ViewComponents
 {
-    public class PortfolioViewComponent : ViewComponent
+    public class ServiceListViewComponent : ViewComponent
     {
-        private readonly IPortfolioService _portfolioService;
+        private readonly IServiceService _serviceService;
 
-        public PortfolioViewComponent(IPortfolioService portfolioService)
+        public ServiceListViewComponent(IServiceService serviceService)
         {
-            _portfolioService = portfolioService;
+            _serviceService = serviceService;
         }
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
             // Business katmanından verileri çekiyoruz
-            var values = _portfolioService.TGetAll();
+            var values = _serviceService.TGetAll();
             return View(values);
         }
     }

@@ -49,11 +49,11 @@
 										<div class="layer border" data-depth="0.2">
 											<span class="span1"></span>
 											<span class="span2"></span>
-											<img src="img/thumb/450-550.jpg" alt="">
+											<img src="~/mainpack/html/img/thumb/450-550.jpg" alt="">
 										</div>
 										<div class="img_holder layer" data-depth="0.3">
-											<img src="img/thumb/450-550.jpg" alt="">
-											<div class="abs_img" data-bg-img="img/about.jpg"></div>
+											<img src="~/mainpack/html/img/thumb/450-550.jpg" alt="">
+											<div class="abs_img" data-bg-img="~/mainpack/html/img/about.jpg"></div>
 										</div>
 										<div class="dots layer" data-switch="disable" data-depth="0.4">
 										</div>
@@ -64,8 +64,8 @@
 									
 									<!-- Main Title -->
 									<div class="main_title">
-										<h3>Website Developer</h3>
-										<p>Founder of <a href="https://frenify.com/" target="_blank">Frenify</a>. Professional UI/UX designer and web developer based on London. Sometimes works as a freelancer.</p>
+										<h3>Developer</h3>
+										<p>I am a C# and ASP.NET Core developer based in Istanbul. I focus on backend and web development. I enjoy developing modern web applications and continuously improving my skills.</p>
 										<img src="img/signature.png" alt="" />
 									</div>
 									<!-- /Main Title -->
@@ -92,60 +92,10 @@
 				<!-- /Scroll to next section -->
 				
 				<!-- Biography Section -->
-				<section class="biography" id="biography">
-					
-					<!-- Main Title -->
-					<div class="main_title center">
-						<div class="container max880">
-							<h3>Biography</h3>
-							<p>I'm a Freelancer Front-end Developer with over 12 years of experience. I'm from London, UK. I code and create web elements for amazing people around the world. I like work with new people. New people are new experiences.</p>
-						</div>
-					</div>
-					<!-- /Main Title -->
-					
-					
-					<!-- Info Items -->
-					<div class="fn_cs_info_items">
-						<div class="container">
-							<div class="row">
-								
-								<ul>
-									<li class="wow fadeInUp" data-wow-delay="0s"><p>Name: <span>Felicia Amor</span></p></li>
-									<li class="wow fadeInUp" data-wow-delay="0.15s"><p>Birthday: <span>June 14, 1992</span></p></li>
-									<li class="wow fadeInUp" data-wow-delay="0.3s"><p>Age: <span>29 Years</span></p></li>
-									<li class="wow fadeInUp" data-wow-delay="0.45s"><p>Adress: <span>London, UK</span></p></li>
-									<li class="wow fadeInUp" data-wow-delay="0.6s"><p>Phone: <span><a href="tel:+17785355344">(+1) 7785 355 344</a></span></p></li>
-									<li class="wow fadeInUp" data-wow-delay="0.75s"><p>Skype: <span>Felicia.A</span></p></li>
-									<li class="wow fadeInUp" data-wow-delay="0.9s"><p>Email: <span><a href="mailto:felicia@domainname.com">felicia@domainname.com</a></span></p></li>
-									<li class="wow fadeInUp" data-wow-delay="1.05s"><p>Telegram: <span>Available</span></p></li>
-								</ul>
-								
-							</div>
-						</div>
-					</div>
-					<!-- /Info Items -->
-					
-					
-					<!-- Download CV Button -->
-					<div class="fn_cs_cv_btn">
-						<div class="container">
-							<span class="line top_hover"></span>
-							<span class="line bottom_hover"></span>
-							<span class="line top"></span>
-							<span class="line bottom"></span>
-							<a href="img/cv.jpg" download>
-								<span class="icon">
-									<img src="svg/inbox.svg" alt="" class="fn__svg" />
-									<img src="svg/arrow.svg" alt="" class="fn__svg arrow" />
-								</span>
-								<span>Download CV</span>
-							</a>
-						</div>
-					</div>
-					<!-- /Download CV Button -->
-					
-					
-					<!-- Tabs Shortcode -->
+				@await Component.InvokeAsync("BiographyList")
+				<!-- /Biography Section -->
+
+				<!-- Tabs Shortcode -->
 					<div class="fn_cs_tabs">
 						<div class="container max880">
 							<div class="row">
@@ -163,47 +113,8 @@
 								<!-- Tab: Content -->
 								<div class="tab_content">
 									
-									<!-- #1 tab content -->
-									<div id="tab1" class="tab_item active">
-										
-										<!-- Boxed List -->
-										<div class="fn_cs_boxed_list">
-											<ul>
-												<li>
-													<div class="item">
-														<div class="item_top">
-															<h5>Frenify  LLC</h5>
-															<span>( 2018 — Today )</span>
-														</div>
-														<h3>Sr. Front-end Engineer</h3>
-														<p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-													</div>
-												</li>
-												<li>
-													<div class="item">
-														<div class="item_top">
-															<h5>Google  LLC</h5>
-															<span>( 2016 — 2018 )</span>
-														</div>
-														<h3>Front-end Developer</h3>
-														<p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-													</div>
-												</li>
-												<li>
-													<div class="item">
-														<div class="item_top">
-															<h5>Twitter  LLC</h5>
-															<span>( 2016 — 2011 )</span>
-														</div>
-														<h3>Graphic Designer</h3>
-														<p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-													</div>
-												</li>
-											</ul>
-										</div>
-										<!-- /Boxed List -->
-										
-									</div>
+									<!-- #1 tab content Experience -->
+									@await Component.InvokeAsync("Experience")
 									<!-- /#1 tab content -->
 									
 									<!-- #2 tab content -->
@@ -305,10 +216,7 @@
 						</div>
 					</div>
 					<!-- /Tabs Shortcode -->
-					
-				</section>
-				<!-- /Biography Section -->
-				
+
 				<!-- Scroll to next section -->
 				<div class="fn__next_section">
 					<div class="container"><span></span></div>
@@ -320,91 +228,7 @@
 				<!-- /Scroll to next section -->
 				
 				<!-- Portfolio Section -->
-				<section class="portfolio" id="portfolio">
-				
-					<!-- Main Title -->
-					<div class="main_title center">
-						<div class="container max880">
-							<h3>Portfolio</h3>
-							<p>Now, I’m working on a professional, visually sophisticated and technologically proficient, responsive and multi-functional wordpress theme Elonissa. If you are interested to work with me, click below button and contact with me right now, so we can talk about your project.</p>
-							<div class="main_button">
-								<a href="#contact">If you are interested, Get in Touch With Me</a>
-							</div>
-						</div>
-					</div>
-					<!-- /Main Title -->
-					
-					<div class="portfolio_list">
-						<div class="container">
-							<ul class="fn__masonry gallery_zoom">
-
-								<li class="masonry_in">
-									<div class="item">
-										<div class="title_holder">
-											<h3><a class="fn__link zoom" href="img/portfolio/1.jpg" data-title="Smashing Magazine Print">Smashing Magazine Print</a></h3>
-											<p>illustration, design</p>
-										</div>
-
-										<div class="img_holder">
-											<a class="zoom" href="img/portfolio/1.jpg" data-title="Smashing Magazine Print"></a>
-											<img src="img/thumb/square.jpg" alt="">
-											<div class="abs_img" data-bg-img="img/portfolio/1.jpg"></div>
-										</div>
-									</div>
-								</li>
-
-								<li class="masonry_in">
-									<div class="item">
-										<div class="title_holder">
-											<h3><a class="fn__link zoom" href="img/portfolio/2.jpg" data-title="Revolution Book">Revolution Book</a></h3>
-											<p>illustration, design</p>
-										</div>
-
-										<div class="img_holder">
-											<a class="zoom" href="img/portfolio/2.jpg" data-title="Revolution Book"></a>
-											<img src="img/thumb/square.jpg" alt="">
-											<div class="abs_img" data-bg-img="img/portfolio/2.jpg"></div>
-										</div>
-									</div>
-								</li>
-
-								<li class="masonry_in">
-									<div class="item">
-										<div class="title_holder">
-											<h3><a class="fn__link zoom" href="img/portfolio/3.jpg" data-title="Dreamers Logo">Dreamers Logo</a></h3>
-											<p>illustration, design</p>
-										</div>
-
-										<div class="img_holder">
-											<a class="zoom" href="img/portfolio/3.jpg" data-title="Dreamers Logo"></a>
-											<img src="img/thumb/square.jpg" alt="">
-											<div class="abs_img" data-bg-img="img/portfolio/3.jpg"></div>
-										</div>
-									</div>
-								</li>
-
-								<li class="masonry_in">
-									<div class="item">
-										<div class="title_holder">
-											<h3><a class="fn__link zoom" href="img/portfolio/4.jpg" data-title="Reductive Design">Reductive Design</a></h3>
-											<p>illustration, design</p>
-										</div>
-
-										<div class="img_holder">
-											<a class="zoom" href="img/portfolio/4.jpg" data-title="Reductive Design"></a>
-											<img src="img/thumb/square.jpg" alt="">
-											<div class="abs_img" data-bg-img="img/portfolio/4.jpg"></div>
-										</div>
-									</div>
-								</li>
-
-
-							</ul>
-						</div>
-					</div>
-					
-					
-				</section>
+				@await Component.InvokeAsync("PortfolioList")
 				<!-- /Portfolio Section -->
 				
 				
@@ -419,69 +243,7 @@
 				<!-- /Scroll to next section -->
 				
 				<!-- Service Section -->
-				<section class="service" id="service">
-					
-					<!-- Main Title -->
-					<div class="main_title center">
-						<div class="container max880">
-							<h3>Services</h3>
-							<p>I help ambitious businesses like yours generate more profits by building awareness, driving web traffic, connecting with customers and growing overall sales. My only working rule is that I don't work through agencies, I prefer to communicate directly with clients.</p>
-						</div>
-					</div>
-					<!-- /Main Title -->
-					
-					<!-- Boxed List -->
-					<div class="fn_cs_boxed_list modern">
-						<div class="container max1020">
-							<ul>
-								<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0s">
-									<div class="item">
-										<div class="badge">
-											<p>Starts From</p>
-											<h5>$500</h5>
-										</div>
-										<h3>Web &amp; Product Design</h3>
-										<p>From low-fidelity wireframing and prototyping to a final coded design. We don't just hand off static designs, but enjoy working directly in the browser (♥ CSS) as much as with design tools such a <a class="fn__link" href="#">Figma</a>. We use can also setup complete sites in <a class="fn__link" href="#">Statamic</a> and <a class="fn__link" href="#">Kirby</a> and work alongside front-end developers to provide a complete service.</p>
-									</div>
-								</li>
-								<li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-									<div class="item">
-										<div class="badge">
-											<p>Starts From</p>
-											<h5>$450</h5>
-										</div>
-										<h3>Brand Identity</h3>
-										<p>From a single logomark to <a class="fn__link" href="#">a full branding system</a>. A brand new logo may not be the answer for you, we strongly believe in refining and updating existing logos to increase effectiveness without losing brand equity.</p>
-									</div>
-								</li>
-								<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
-									<div class="item">
-										<div class="badge">
-											<p>Starts From</p>
-											<h5>$200</h5>
-										</div>
-										<h3>Iconography</h3>
-										<p>This is a speciality of ours, and we have worked with Skype, Spotify and Dyson (to name just a few). The process of reducing an idea to it's simplest, but still recognisable form is joyous!</p>
-									</div>
-								</li>
-								<li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.6s">
-									<div class="item">
-										<div class="badge">
-											<p>Starts From</p>
-											<h5>$150</h5>
-										</div>
-										<h3>Print</h3>
-										<p>We come from a traditional print publishing background, starting in the last days of paste up artwork.</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						
-					</div>
-					<!-- /Boxed List -->
-					
-					
-				</section>
+				@await Component.InvokeAsync("ServiceList")
 				<!-- /Service Section -->
 				
 				
@@ -497,314 +259,10 @@
 				<!-- /Scroll to next section -->
 				
 				
-				<!-- Customer Section -->
-				<section class="customer" id="customer">
-				
-				
-					<!-- Main Title -->
-					<div class="main_title center">
-						<div class="container max880">
-							<h3>Customers</h3>
-						</div>
-					</div>
-					<!-- /Main Title -->
-					
-					<div class="container">
-						<!-- Partners -->
-						<div class="fn_cs_partners">
-							<ul>
-								<li><a href="#"><img src="img/partners/1.png" alt="" /></a></li>
-								<li><a href="#"><img src="img/partners/2.png" alt="" /></a></li>
-								<li><a href="#"><img src="img/partners/3.png" alt="" /></a></li>
-								<li><a href="#"><img src="img/partners/4.png" alt="" /></a></li>
-								<li><a href="#"><img src="img/partners/5.png" alt="" /></a></li>
-								<li><a href="#"><img src="img/partners/6.png" alt="" /></a></li>
-								<li><a href="#"><img src="img/partners/7.png" alt="" /></a></li>
-								<li><a href="#"><img src="img/partners/8.png" alt="" /></a></li>
-							</ul>
-						</div>
-						<!-- /Partners -->
-						
-						<div class="fn_cs_testimonials">
-							<div class="owl-carousel owl-theme">
-							
-							
-								<div class="item">
-									<div class="icon">
-										<img src="svg/quote.svg" alt="" class="fn__svg" />
-									</div>
-									<div class="title_holder">
-										<div class="desc">
-											<p>They really nailed it. This is one of the best themes I have seen in a long time. Very nice design with lots of customization available. Many of my clients have chosen this theme for their portfolio sites.</p>
-										</div>
-										<div class="name">
-											<h3>Albert Walker</h3>
-											<p>Freelancer &amp; Designer</p>
-										</div>
-									</div>
-								</div>
-							
-								<div class="item">
-									<div class="icon">
-										<img src="svg/quote.svg" alt="" class="fn__svg" />
-									</div>
-									<div class="title_holder">
-										<div class="desc">
-											<p>This was exactly what I needed for my portfolio, and it looks great. I had a couple issues that support helped troubleshoot both via email and on the comments, which definitely made it worth the price. I'm very pleased with this purchase.</p>
-										</div>
-										<div class="name">
-											<h3>Anna Barbera</h3>
-											<p>Photographer</p>
-										</div>
-									</div>
-								</div>
-							
-								<div class="item">
-									<div class="icon">
-										<img src="svg/quote.svg" alt="" class="fn__svg" />
-									</div>
-									<div class="title_holder">
-										<div class="desc">
-											<p>They really nailed it. This is one of the best themes I have seen in a long time. Very nice design with lots of customization available. Many of my clients have chosen this theme for their portfolio sites.</p>
-										</div>
-										<div class="name">
-											<h3>Dana Atkins</h3>
-											<p>Customer</p>
-										</div>
-									</div>
-								</div>
-								
-								
-							</div>
-								
-							<div class="my__nav">
-								<a href="#" class="prev"><img src="svg/right-arrow.svg" alt="" class="fn__svg" /></a>
-								<a href="#" class="next"><img src="svg/right-arrow.svg" alt="" class="fn__svg" /></a>
-							</div>
-						</div>
-					</div>
-						
-					
-					
-				</section>
-				<!-- /Customer Section -->
-				
-				
-				<!-- Scroll to next section -->
-				<div class="fn__next_section">
-					<div class="container"><span></span></div>
-					<a href="#">
-						<img src="svg/right-arrow.svg" alt="" class="fn__svg" />
-						<span class="fn__tooltip">Double click to scroll the screen to previous section</span>
-					</a>
-				</div>
-				<!-- /Scroll to next section -->
-				
-				
-				<!-- Blog Section -->
-				<section class="blog" id="blog">
-					
-					
-					<!-- Main Title -->
-					<div class="main_title center">
-						<div class="container max880">
-							<h3>News &amp; Tips</h3>
-						</div>
-					</div>
-					<!-- /Main Title -->
-					
-					
-					<div class="container">
-						<!-- Blog List -->
-						<div class="blog_list">
-							<ul class="gallery_zoom">
-								<li>
-									<div class="item">
-										<div class="left_part">
-											<div class="img_holder">
-												<a class="zoom" href="img/blog/1.jpg"></a>
-												<img src="img/thumb/square.jpg" alt="" />
-												<div class="abs_img" data-bg-img="img/blog/1.jpg"></div>
-											</div>
-										</div>
-										<div class="right_part">
-											<div class="title">
-												<h3><a class="fn__link zoom" href="img/blog/1.jpg">What You Know About Design &amp; What You Don't Know About Design.</a></h3>
-												<p>September 25. 2021</p>
-											</div>
-											<div class="main_button">
-												<a class="zoom" href="img/blog/1.jpg">Continue Reading</a>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class="item">
-										<div class="left_part">
-											<div class="img_holder">
-												<a class="zoom" href="img/blog/2.jpg"></a>
-												<img src="img/thumb/square.jpg" alt="" />
-												<div class="abs_img" data-bg-img="img/blog/2.jpg"></div>
-											</div>
-										</div>
-										<div class="right_part">
-											<div class="title">
-												<h3><a class="fn__link zoom" href="img/blog/2.jpg">What You Know About Design &amp; What You Don't Know About Design.</a></h3>
-												<p>September 25. 2021</p>
-											</div>
-											<div class="main_button">
-												<a class="zoom" href="img/blog/2.jpg">Continue Reading</a>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="be_animated">
-									<div class="item">
-										<div class="left_part">
-											<div class="img_holder">
-												<a class="zoom" href="img/blog/3.jpg"></a>
-												<img src="img/thumb/square.jpg" alt="" />
-												<div class="abs_img" data-bg-img="img/blog/3.jpg"></div>
-											</div>
-										</div>
-										<div class="right_part">
-											<div class="title">
-												<h3><a class="fn__link zoom" href="img/blog/3.jpg">What You Know About Design &amp; What You Don't Know About Design.</a></h3>
-												<p>September 25. 2021</p>
-											</div>
-											<div class="main_button">
-												<a class="zoom" href="img/blog/3.jpg">Continue Reading</a>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li class="be_animated">
-									<div class="item">
-										<div class="left_part">
-											<div class="img_holder">
-												<a class="zoom" href="img/blog/4.jpg"></a>
-												<img src="img/thumb/square.jpg" alt="" />
-												<div class="abs_img" data-bg-img="img/blog/4.jpg"></div>
-											</div>
-										</div>
-										<div class="right_part">
-											<div class="title">
-												<h3><a class="fn__link zoom" href="img/blog/4.jpg">What You Know About Design &amp; What You Don't Know About Design.</a></h3>
-												<p>September 25. 2021</p>
-											</div>
-											<div class="main_button">
-												<a class="zoom" href="img/blog/4.jpg">Continue Reading</a>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-							
-							<div class="clearfix"></div>
-							
-							<div class="load_more">
-								<a href="#" data-initial="Load More" data-loading="Loading..." data-done="Done" data-no="No more items found">
-									<span class="text">Load More</span>
-									<span class="icon"></span>
-								</a>
-							</div>
-							
-						</div>
-						<!-- /Blog List -->	
-					</div>
-					
-				</section>
-				<!-- /Blog Section -->
-				
-				
-				<!-- Scroll to next section -->
-				<div class="fn__next_section">
-					<div class="container"><span></span></div>
-					<a href="#">
-						<img src="svg/right-arrow.svg" alt="" class="fn__svg" />
-						<span class="fn__tooltip">Double click to scroll the screen to previous section</span>
-					</a>
-				</div>
-				<!-- /Scroll to next section -->
 				
 				
 				<!-- Contact Section -->
-				<section class="contact" id="contact">
-					
-					<!-- Main Title -->
-					<div class="main_title center">
-						<div class="container max880">
-							<h3>Contact</h3>
-						</div>
-					</div>
-					<!-- /Main Title -->
-					
-					<!-- Contact -->
-					<div class="rewall_fn_contact">
-						<div class="container max880">					
-							
-							<!-- Contact Form -->
-							<form class="contact_form" action="/" method="post" autocomplete="off" data-email="frenifyteam@gmail.com">
-								
-								<!--
-								 	Don't remove below code in avoid to work contact form properly.
-									You can chance dat-success value with your one. It will be used when user will try to contact via contact form and will get success message.
-								-->
-								<div class="success" data-success="Your message has been received, we will contact you soon."></div>
-								<div class="empty_notice"><span>Please Fill Required Fields!</span></div>
-								<!-- -->
-								
-								<div class="items_wrap">
-									<div class="items">
-										<div class="item half">
-											<div class="input_wrapper">
-												<input id="name" type="text" />
-												<span class="moving_placeholder">Name *</span>
-											</div>
-										</div>
-										<div class="item half">
-											<div class="input_wrapper">
-												<input id="email" type="email" />
-												<span class="moving_placeholder">Email *</span>
-											</div>
-										</div>
-										<div class="item">
-											<div class="input_wrapper">
-												<input id="phone" type="phone" />
-												<span class="moving_placeholder">Phone</span>
-											</div>
-										</div>
-										<div class="item">
-											<div class="input_wrapper">
-												<textarea id="message"></textarea>
-												<span class="moving_placeholder">Message</span>
-											</div>
-										</div>
-										<div class="item">
-											<a id="send_message" href="#">Send Message</a>
-										</div>
-									</div>
-								</div>
-							</form>
-							<!-- /Contact Form -->
-							
-							
-							<!-- Contact Info -->
-							<div class="fn_cs_contact_info">
-								<p>Address</p>
-								<h3>69 Queen St, London, United Kingdom</h3>
-								<p>Phone</p>
-								<h3><a href="tel:+7068980751">(+706) 898-0751</a></h3>
-								<p><a class="fn__link" href="mailto:frenifyteam@gmail.com">frenifyteam@gmail.com</a></p>
-							</div>
-							<!-- /Contact Info -->
-							
-							
-						</div>
-					</div>
-					<!-- /Contact -->
-					
-				</section>
+				@await Component.InvokeAsync("ContactList")
 				<!-- /Contact Section -->
 				
 		

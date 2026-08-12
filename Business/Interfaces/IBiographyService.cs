@@ -13,5 +13,6 @@ namespace Business.Interfaces
         void TInsert(Biography entity);
         void TUpdate(Biography entity);
         void TDelete(Biography entity);
+        Task<List<Biography>?> GetAllAsync();
     }
 }
