@@ -85,7 +85,7 @@
 				<div class="fn__next_section">
 					<div class="container"><span></span></div>
 					<a href="#">
-						<img src="svg/right-arrow.svg" alt="" class="fn__svg" />
+						<img src="~/mainpack/html/svg/right-arrow.svg" alt="" class="fn__svg" />
 						<span class="fn__tooltip">Double click to scroll the screen to previous section</span>
 					</a>
 				</div>
@@ -104,8 +104,9 @@
 								<div class="tab_header">
 									<ul>
 										<li class="active"><a href="#tab1">Experience</a></li>
-										<li><a href="#tab2">Education</a></li>
-										<li><a href="#tab3">Skills</a></li>
+										<li><a href="#tab2">Certificates</a></li>
+										<li><a href="#tab3">Education</a></li>
+										<li><a href="#tab4">Skills</a></li>
 									</ul>
 								</div>
 								<!-- /Tab: Header -->
@@ -118,96 +119,14 @@
 									<!-- /#1 tab content -->
 									
 									<!-- #2 tab content -->
-									<div id="tab2" class="tab_item">
-										
-										<!-- Boxed List -->
-										<div class="fn_cs_boxed_list">
-											<ul>
-												<li>
-													<div class="item">
-														<div class="item_top">
-															<h5>Frenify University</h5>
-															<span>( 2014 — 2017 )</span>
-														</div>
-														<h3>Computer Science</h3>
-														<p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-													</div>
-												</li>
-												<li>
-													<div class="item">
-														<div class="item_top">
-															<h5>Edu University</h5>
-															<span>( 2011 — 2014 )</span>
-														</div>
-														<h3>Master Degree</h3>
-														<p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-													</div>
-												</li>
-												<li>
-													<div class="item">
-														<div class="item_top">
-															<h5>Clolumbia College</h5>
-															<span>( 2007 — 2011 )</span>
-														</div>
-														<h3>Bachelor Degree</h3>
-														<p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-													</div>
-												</li>
-											</ul>
-										</div>
-										<!-- /Boxed List -->
-											
-									</div>
+									@await Component.InvokeAsync("Education")
 									<!-- /#2 tab content -->
-									
 									<!-- #3 tab content -->
-									<div id="tab3" class="tab_item">
-										
-										<!-- Progress Bar -->
-										<div class="fn_cs_progress_bar">
-											
-											<div class="progress_item" data-value="92">
-												<div class="item_in">
-													<h3 class="progress_title">Adobe Photoshop</h3>
-													<span class="progress_percent"></span>
-													<div class="progress_bg"></div>
-												</div>
-											</div>
-											
-											<div class="progress_item" data-value="95">
-												<div class="item_in">
-													<h3 class="progress_title">HTML5 &amp; CSS3</h3>
-													<span class="progress_percent"></span>
-													<div class="progress_bg"></div>
-												</div>
-											</div>
-											
-											<div class="progress_item" data-value="80">
-												<div class="item_in">
-													<h3 class="progress_title">WordPress</h3>
-													<span class="progress_percent"></span>
-													<div class="progress_bg"></div>
-												</div>
-											</div>
-											
-											<div class="progress_item" data-value="85">
-												<div class="item_in">
-													<h3 class="progress_title">Adobe Illustrator</h3>
-													<span class="progress_percent"></span>
-													<div class="progress_bg"></div>
-												</div>
-											</div>
-											
-										</div>
-										<!-- /Progress Bar -->
-										
-										<!-- Description -->
-										<div class="fn_cs_desc">
-											<p>A freelance creative designer with a love for minimal design, clean typography and well-written code, located in San Francisco. Provide high quality and cost effective offshore web and software development services. Wide range of web and software development services across the world.</p>
-										</div>
-											
-									</div>
-									<!-- /#2 tab content -->
+									@await Component.InvokeAsync("Certificate")
+									<!-- /#3 tab content -->
+									<!-- #4 tab content -->
+									@await Component.InvokeAsync("Skill")
+									<!-- /#4 tab content -->
 									
 								</div>
 								<!-- /Tab: Content -->
@@ -221,7 +140,7 @@
 				<div class="fn__next_section">
 					<div class="container"><span></span></div>
 					<a href="#">
-						<img src="svg/right-arrow.svg" alt="" class="fn__svg" />
+						<img src="~/mainpack/html/svg/right-arrow.svg" alt="" class="fn__svg" />
 						<span class="fn__tooltip">Double click to scroll the screen to previous section</span>
 					</a>
 				</div>
@@ -236,7 +155,7 @@
 				<div class="fn__next_section">
 					<div class="container"><span></span></div>
 					<a href="#">
-						<img src="svg/right-arrow.svg" alt="" class="fn__svg" />
+						<img src="~/mainpack/html/svg/right-arrow.svg" alt="" class="fn__svg" />
 						<span class="fn__tooltip">Double click to scroll the screen to previous section</span>
 					</a>
 				</div>
@@ -252,7 +171,7 @@
 				<div class="fn__next_section">
 					<div class="container"><span></span></div>
 					<a href="#">
-						<img src="svg/right-arrow.svg" alt="" class="fn__svg" />
+						<img src="~/mainpack/html/svg/right-arrow.svg" alt="" class="fn__svg" />
 						<span class="fn__tooltip">Double click to scroll the screen to previous section</span>
 					</a>
 				</div>

@@ -255,3 +255,6 @@ C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\bin\Debug\net10.0\zh-Hant\Mi
 C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\bin\Debug\net10.0\FluentValidation.dll
 C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\bin\Debug\net10.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\MyWebSiteUI.sourcelink.json
+C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed\4xjykvlh8e-{0}-imitrsy1oy-imitrsy1oy.gz
+C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed\ejxnlxc8e0-{0}-jnsqu6pdom-jnsqu6pdom.gz
+C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed\rj93devw5s-{0}-imitrsy1oy-imitrsy1oy.gz

@@ -11,6 +11,7 @@ namespace Core.Entities
         public string? PortfolioTitle { get; set; }
         public string? PortfolioDescription { get; set; }
         public string? PortfolioImage { get; set; }
+        public string? PortfolioLink { get; set; }
         public bool IsActive { get; set; } = true;
     }
 }

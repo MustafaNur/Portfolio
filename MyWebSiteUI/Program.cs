@@ -18,6 +18,7 @@ builder.Services.AddDbContext<PortfolioContext>(options =>
 // Repository ve Servis Enjeksiyonları
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<IBiographyService, BiographyManager>();
+builder.Services.AddScoped<ICertificateService, CertificateManager>();
 builder.Services.AddScoped<IContactService, ContactManager>();
 builder.Services.AddScoped<IEducationService, EducationManager>();
 builder.Services.AddScoped<IExperienceService, ExperienceManager>();

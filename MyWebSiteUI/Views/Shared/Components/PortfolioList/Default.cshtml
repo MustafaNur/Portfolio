@@ -4,7 +4,7 @@
     ViewData["Title"] = "Default";
 }
 
-<h1>@ViewData["Title"]</h1>
+
 
 <div>
     <section class="portfolio" id="portfolio">
@@ -13,9 +13,12 @@
 					<div class="main_title center">
 						<div class="container max880">
 							<h3>Portfolio</h3>
-							<p>Now, I’m working on a professional, visually sophisticated and technologically proficient, responsive and multi-functional wordpress theme Elonissa. If you are interested to work with me, click below button and contact with me right now, so we can talk about your project.</p>
+							<p>I’m working on building modern, scalable, and AI-powered applications using ASP.NET Core and artificial intelligence technologies. My goal is to combine robust backend architectures with intelligent AI solutions to create fast, secure, responsive, and user-focused digital products.
+
+From developing web applications and APIs with ASP.NET Core to integrating AI-powered features, automation, and data-driven solutions, I’m continuously improving my skills and building real-world projects.
+							</p>
 							<div class="main_button">
-								<a href="#contact">If you are interested, Get in Touch With Me</a>
+								<a href="https://github.com/MustafaNur" target="_blank">Visit my portfolio on GitHub.</a>
 							</div>
 						</div>
 					</div>
@@ -25,67 +28,23 @@
 						<div class="container">
 							<ul class="fn__masonry gallery_zoom">
 
+								@foreach (var item in Model)
+								{
 								<li class="masonry_in">
 									<div class="item">
 										<div class="title_holder">
-											<h3><a class="fn__link zoom" href="img/portfolio/1.jpg" data-title="Smashing Magazine Print">Smashing Magazine Print</a></h3>
-											<p>illustration, design</p>
+											<h3><a class="fn__link zoom" href="@item.PortfolioImage" data-title="Smashing Magazine Print">@item.PortfolioTitle</a></h3>
+											<p>@item.PortfolioDescription</p>
 										</div>
 
 										<div class="img_holder">
-											<a class="zoom" href="img/portfolio/1.jpg" data-title="Smashing Magazine Print"></a>
-											<img src="img/thumb/square.jpg" alt="">
-											<div class="abs_img" data-bg-img="img/portfolio/1.jpg"></div>
+											<a class="zoom" href="@item.PortfolioImage" data-title="Smashing Magazine Print"></a>
+											<img src="@item.PortfolioImage" alt="Project Image" style="width: 100%; height: 450px;" />
+											<div class="abs_img" data-bg-img="@item.PortfolioImage"></div>
 										</div>
 									</div>
 								</li>
-
-								<li class="masonry_in">
-									<div class="item">
-										<div class="title_holder">
-											<h3><a class="fn__link zoom" href="img/portfolio/2.jpg" data-title="Revolution Book">Revolution Book</a></h3>
-											<p>illustration, design</p>
-										</div>
-
-										<div class="img_holder">
-											<a class="zoom" href="img/portfolio/2.jpg" data-title="Revolution Book"></a>
-											<img src="img/thumb/square.jpg" alt="">
-											<div class="abs_img" data-bg-img="img/portfolio/2.jpg"></div>
-										</div>
-									</div>
-								</li>
-
-								<li class="masonry_in">
-									<div class="item">
-										<div class="title_holder">
-											<h3><a class="fn__link zoom" href="img/portfolio/3.jpg" data-title="Dreamers Logo">Dreamers Logo</a></h3>
-											<p>illustration, design</p>
-										</div>
-
-										<div class="img_holder">
-											<a class="zoom" href="img/portfolio/3.jpg" data-title="Dreamers Logo"></a>
-											<img src="img/thumb/square.jpg" alt="">
-											<div class="abs_img" data-bg-img="img/portfolio/3.jpg"></div>
-										</div>
-									</div>
-								</li>
-
-								<li class="masonry_in">
-									<div class="item">
-										<div class="title_holder">
-											<h3><a class="fn__link zoom" href="img/portfolio/4.jpg" data-title="Reductive Design">Reductive Design</a></h3>
-											<p>illustration, design</p>
-										</div>
-
-										<div class="img_holder">
-											<a class="zoom" href="img/portfolio/4.jpg" data-title="Reductive Design"></a>
-											<img src="img/thumb/square.jpg" alt="">
-											<div class="abs_img" data-bg-img="img/portfolio/4.jpg"></div>
-										</div>
-									</div>
-								</li>
-
-
+								}
 							</ul>
 						</div>
 					</div>

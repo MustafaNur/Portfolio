@@ -10,36 +10,20 @@
 										<!-- Boxed List -->
 										<div class="fn_cs_boxed_list">
 											<ul>
-												<li>
-													<div class="item">
-														<div class="item_top">
-															<h5>Frenify  LLC</h5>
-															<span>( 2018 — Today )</span>
+												@foreach (var item in Model)
+												{
+													<li>
+														<div class="item">
+															<div class="item_top">
+																<h5>@item.ExperienceInstitution</h5>
+																<span>( @item.ExperienceStartDate?.ToString("yyyy") — @item.ExperienceEndDate?.ToString("yyyy") )</span>
+															</div>
+															<h3>@item.ExperienceTitle</h3>
+															<p>@item.ExperienceDescription</p>
 														</div>
-														<h3>Sr. Front-end Engineer</h3>
-														<p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-													</div>
-												</li>
-												<li>
-													<div class="item">
-														<div class="item_top">
-															<h5>Google  LLC</h5>
-															<span>( 2016 — 2018 )</span>
-														</div>
-														<h3>Front-end Developer</h3>
-														<p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-													</div>
-												</li>
-												<li>
-													<div class="item">
-														<div class="item_top">
-															<h5>Twitter  LLC</h5>
-															<span>( 2016 — 2011 )</span>
-														</div>
-														<h3>Graphic Designer</h3>
-														<p>Adipisicing Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-													</div>
-												</li>
+													</li>
+												}
+												
 											</ul>
 										</div>
 										<!-- /Boxed List -->

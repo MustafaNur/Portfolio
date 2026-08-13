@@ -102,8 +102,17 @@ namespace Data.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("EducationID"));
 
+                    b.Property<string>("EducationDescription")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("EducationEndDate")
+                        .HasColumnType("timestamp with time zone");
+
                     b.Property<string>("EducationInstitution")
                         .HasColumnType("text");
+
+                    b.Property<DateTime?>("EducationStartDate")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("EducationTitle")
                         .HasColumnType("text");
@@ -156,6 +165,9 @@ namespace Data.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("PortfolioImage")
+                        .HasColumnType("text");
+
+                    b.Property<string>("PortfolioLink")
                         .HasColumnType("text");
 
                     b.Property<string>("PortfolioTitle")

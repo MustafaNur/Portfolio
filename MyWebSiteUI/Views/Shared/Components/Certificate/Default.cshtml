@@ -4,8 +4,28 @@
     ViewData["Title"] = "Default";
 }
 
-<h1>@ViewData["Title"]</h1>
-
-<div>
-    
-</div>
+<div id="tab2" class="tab_item">
+										
+										<!-- Boxed List -->
+										<div class="fn_cs_boxed_list">
+											<ul>
+												<li>
+                                                    @foreach (var item in Model)
+                                                    {
+                                                    <div class="item">
+														<div class="item_top">
+															<h5>@item.CertificateTitle</h5>
+															<span>( @item.CertificateDate?.ToString("yyyy") )</span>
+														</div>
+														<h3>@item.CertificateInstitution</h3>
+														<p>@item.CertificateDescription</p>
+													</div>
+                                                    }
+													
+												</li>
+												
+											</ul>
+										</div>
+										<!-- /Boxed List -->
+											
+									</div>
