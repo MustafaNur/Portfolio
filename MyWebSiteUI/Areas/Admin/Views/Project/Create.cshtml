@@ -1,0 +1,50 @@
+@model Portfolio
+
+@{
+    ViewData["Title"] = "Proje Ekle";
+}
+
+<div class="card-surface rounded-primary p-6 md:p-8">
+    <div class="mb-6">
+        <p class="text-xs font-semibold uppercase tracking-[0.22em] text-brand-dark">Yeni İçerik</p>
+        <h2 class="mt-2 text-3xl font-bold text-navy-700">Proje Ekle</h2>
+    </div>
+
+    <form asp-area="Admin" asp-controller="Project" asp-action="Create" method="post" class="space-y-6">
+        <div>
+            <label asp-for="PortfolioTitle" class="mb-2 block text-sm font-medium text-slate-700">Başlık</label>
+            <input asp-for="PortfolioTitle" class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-700 outline-none transition focus:border-brand-dark focus:ring-2 focus:ring-brand-dark/20" />
+            <span asp-validation-for="PortfolioTitle" class="mt-2 block text-sm text-red-500"></span>
+        </div>
+
+        <div>
+            <label asp-for="PortfolioDescription" class="mb-2 block text-sm font-medium text-slate-700">Açıklama</label>
+            <textarea asp-for="PortfolioDescription" rows="5" class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-700 outline-none transition focus:border-brand-dark focus:ring-2 focus:ring-brand-dark/20"></textarea>
+            <span asp-validation-for="PortfolioDescription" class="mt-2 block text-sm text-red-500"></span>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2">
+            <div>
+                <label asp-for="PortfolioImage" class="mb-2 block text-sm font-medium text-slate-700">Görsel</label>
+                <input asp-for="PortfolioImage" class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-700 outline-none transition focus:border-brand-dark focus:ring-2 focus:ring-brand-dark/20" />
+                <span asp-validation-for="PortfolioImage" class="mt-2 block text-sm text-red-500"></span>
+            </div>
+
+            <div>
+                <label asp-for="PortfolioLink" class="mb-2 block text-sm font-medium text-slate-700">Link</label>
+                <input asp-for="PortfolioLink" class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-700 outline-none transition focus:border-brand-dark focus:ring-2 focus:ring-brand-dark/20" />
+                <span asp-validation-for="PortfolioLink" class="mt-2 block text-sm text-red-500"></span>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+            <input asp-for="IsActive" class="h-4 w-4 rounded border-slate-300 text-brand-dark focus:ring-brand-dark" />
+            <label asp-for="IsActive" class="text-sm font-medium text-slate-700">Aktif mi?</label>
+        </div>
+
+        <div class="flex gap-3 pt-2">
+            <button type="submit" class="rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-emerald-500/20 transition hover:opacity-95">Kaydet</button>
+            <a asp-area="Admin" asp-controller="Project" asp-action="Index" class="rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50">İptal</a>
+        </div>
+    </form>
+</div>
