@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MyWebSiteUI.Areas.Admin.Controllers;
 
 [Area("Admin")]
-public class ExperienceController : Controller
+public class ExperienceController : AdminControllerBase
 {
     private readonly IExperienceService _experienceService;
 

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MyWebSiteUI.Areas.Admin.Controllers;
 
 [Area("Admin")]
-public class EducationController : Controller
+public class EducationController : AdminControllerBase
 {
     private readonly IEducationService _educationService;
 

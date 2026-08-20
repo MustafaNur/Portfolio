@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MyWebSiteUI.Areas.Admin.Controllers;
 
 [Area("Admin")]
-public class ProjectController : Controller
+public class ProjectController : AdminControllerBase
 {
     private readonly IPortfolioService _portfolioService;
 

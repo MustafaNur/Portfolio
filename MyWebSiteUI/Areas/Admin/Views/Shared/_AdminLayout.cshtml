@@ -133,6 +133,9 @@
                             </div>
                             <div class="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-brand-light to-brand-dark text-sm font-bold text-white shadow-glow">A</div>
                             <a href="/" class="hidden rounded-xl bg-navy-700 px-4 py-2 text-sm font-medium text-white transition hover:bg-navy-800 sm:inline-flex">Siteye Dön</a>
+                            <form asp-area="Admin" asp-controller="Login" asp-action="Logout" method="post">
+                                <button type="submit" class="rounded-xl border border-slate-200 px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50">Çıkış</button>
+                            </form>
                     </div>
                 </div>
             </header>

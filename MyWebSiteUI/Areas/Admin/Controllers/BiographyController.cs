@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MyWebSiteUI.Areas.Admin.Controllers;
 
 [Area("Admin")]
-public class BiographyController : Controller
+public class BiographyController : AdminControllerBase
 {
     private readonly IBiographyService _biographyService;
 

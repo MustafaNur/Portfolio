@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MyWebSiteUI.Areas.Admin.Controllers;
 
 [Area("Admin")]
-public class CertificateController : Controller
+public class CertificateController : AdminControllerBase
 {
     private readonly ICertificateService _certificateService;
 

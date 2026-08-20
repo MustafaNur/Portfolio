@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore; // DbContext, DbSet, DbContextOptions ve ModelBuilder için şart
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Core.Entities; // Project vb. Entity sınıflarınız hangi projede/namespace'te ise onu ekleyin
 
 
 namespace DataAccess.Context
 {
-    public class PortfolioContext : DbContext
+    public class PortfolioContext : IdentityDbContext<IdentityUser>
     {
         // Program.cs'deki options yapılandırmasını kurucu metoda alıyoruz
         public PortfolioContext(DbContextOptions<PortfolioContext> options) : base(options)

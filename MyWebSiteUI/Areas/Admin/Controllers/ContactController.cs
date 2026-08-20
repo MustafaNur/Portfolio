@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MyWebSiteUI.Areas.Admin.Controllers;
 
 [Area("Admin")]
-public class ContactController : Controller
+public class ContactController : AdminControllerBase
 {
     private readonly IContactService _contactService;
 

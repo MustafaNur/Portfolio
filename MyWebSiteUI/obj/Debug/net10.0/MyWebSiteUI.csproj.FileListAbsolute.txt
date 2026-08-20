@@ -377,3 +377,4 @@ C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed
 C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed\js8b87435x-{0}-f3pru1gjjb-f3pru1gjjb.gz
 C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed\7la851sf4t-{0}-01lroo9gn4-01lroo9gn4.gz
 C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed\sc4ki7yiqq-{0}-2y6ta9quo0-2y6ta9quo0.gz
+C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

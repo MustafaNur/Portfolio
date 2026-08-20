@@ -5,6 +5,7 @@ using DataAccess.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Business.Interfaces;
 using Business.Concrete;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +27,27 @@ builder.Services.AddScoped<IPortfolioService, PortfolioManager>();
 builder.Services.AddScoped<IServiceService, ServiceManager>();
 builder.Services.AddScoped<ISkillService, SkillManager>();
 
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+    {
+        options.Password.RequiredLength = 8;
+        options.Password.RequireDigit = true;
+        options.Password.RequireUppercase = true;
+        options.Password.RequireLowercase = true;
+        options.Password.RequireNonAlphanumeric = true;
+        options.Lockout.MaxFailedAccessAttempts = 5;
+        options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(15);
+    })
+    .AddEntityFrameworkStores<PortfolioContext>()
+    .AddDefaultTokenProviders();
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Admin/Login";
+    options.AccessDeniedPath = "/Admin/Login";
+    options.ExpireTimeSpan = TimeSpan.FromHours(8);
+    options.SlidingExpiration = true;
+});
+
 
 // wwwroot klasörünü fiziksel çalışma dizinine açıkça bağlayın
 builder.WebHost.UseWebRoot(Path.Combine(builder.Environment.ContentRootPath, "wwwroot"));
@@ -35,6 +57,29 @@ builder.Services.AddControllersWithViews();
 
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
+    var adminUsername = app.Configuration["AdminAuth:Username"];
+    var adminPassword = app.Configuration["AdminAuth:Password"];
+
+    if (!string.IsNullOrWhiteSpace(adminUsername) && !string.IsNullOrWhiteSpace(adminPassword) &&
+        await userManager.FindByNameAsync(adminUsername) is null)
+    {
+        var adminUser = new IdentityUser
+        {
+            UserName = adminUsername,
+            Email = adminUsername
+        };
+        var result = await userManager.CreateAsync(adminUser, adminPassword);
+        if (!result.Succeeded)
+        {
+            throw new InvalidOperationException(
+                $"Admin kullanıcısı oluşturulamadı: {string.Join(", ", result.Errors.Select(error => error.Description))}");
+        }
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -51,6 +96,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapStaticAssets();

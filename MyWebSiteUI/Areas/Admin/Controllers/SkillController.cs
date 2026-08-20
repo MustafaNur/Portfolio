@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MyWebSiteUI.Areas.Admin.Controllers;
 
 [Area("Admin")]
-public class SkillController : Controller
+public class SkillController : AdminControllerBase
 {
     private readonly ISkillService _skillService;
 

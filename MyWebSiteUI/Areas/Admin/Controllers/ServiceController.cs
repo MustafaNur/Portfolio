@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MyWebSiteUI.Areas.Admin.Controllers;
 
 [Area("Admin")]
-public class ServiceController : Controller
+public class ServiceController : AdminControllerBase
 {
     private readonly IServiceService _serviceService;
 
