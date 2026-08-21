@@ -98,7 +98,6 @@ C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed
 C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed\ok61w2v2ks-{0}-b1z2x1zpof-b1z2x1zpof.gz
 C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed\omielwu795-{0}-s4d65z8kd6-s4d65z8kd6.gz
 C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed\l6r2cstij7-{0}-y5dk07mlwl-y5dk07mlwl.gz
-C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed\5zphvd22by-{0}-9ovqminn2l-9ovqminn2l.gz
 C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed\tbo8ye6k6b-{0}-fy4hx03id3-fy4hx03id3.gz
 C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed\cj3vkm7y9p-{0}-2v9g4y38al-2v9g4y38al.gz
 C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed\qmko4cnwhb-{0}-ecxocjnl9g-ecxocjnl9g.gz
@@ -378,3 +377,4 @@ C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed
 C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed\7la851sf4t-{0}-01lroo9gn4-01lroo9gn4.gz
 C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed\sc4ki7yiqq-{0}-2y6ta9quo0-2y6ta9quo0.gz
 C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\musta\OneDrive\Desktop\WebSite\MyWebSiteUI\obj\Debug\net10.0\compressed\5zphvd22by-{0}-xg1ts4acth-xg1ts4acth.gz

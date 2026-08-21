@@ -21,7 +21,7 @@
 						<div class="container max880">					
 							
 							<!-- Contact Form -->
-							<form class="contact_form" action="/" method="post" autocomplete="off" data-email="frenifyteam@gmail.com">
+							<form class="contact_form" action="/Home/SubmitContact" method="post" autocomplete="off" data-email="frenifyteam@gmail.com">
 								
 								<!--
 								 	Don't remove below code in avoid to work contact form properly.
@@ -33,27 +33,28 @@
 								
 								<div class="items_wrap">
 									<div class="items">
+										<input type="hidden" name="ContactSubject" value="Website Contact" />
 										<div class="item half">
 											<div class="input_wrapper">
-												<input id="name" type="text" />
+												<input id="name" name="ContactName" type="text" />
 												<span class="moving_placeholder">Name *</span>
 											</div>
 										</div>
 										<div class="item half">
 											<div class="input_wrapper">
-												<input id="email" type="email" />
+												<input id="email" name="ContactEmail" type="email" />
 												<span class="moving_placeholder">Email *</span>
 											</div>
 										</div>
 										<div class="item">
 											<div class="input_wrapper">
-												<input id="phone" type="phone" />
+												<input id="phone" name="ContactPhone" type="tel" />
 												<span class="moving_placeholder">Phone</span>
 											</div>
 										</div>
 										<div class="item">
 											<div class="input_wrapper">
-												<textarea id="message"></textarea>
+												<textarea id="message" name="ContactMessage"></textarea>
 												<span class="moving_placeholder">Message</span>
 											</div>
 										</div>

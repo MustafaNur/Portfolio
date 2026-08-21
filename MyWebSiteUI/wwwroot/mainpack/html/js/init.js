@@ -82,24 +82,17 @@
 					element.removeClass('is-active');
 					menupart.removeClass('opened');
 					menupart.slideUp(500);
-				}else{
-					element.addClass('is-active');
-					menupart.addClass('opened');
-					menupart.slideDown(500);
-				}return false;
-			});	
-		},
-		
-		colorScheme: function(){
-			var scheme 		= $('.rewall_fn_color_scheme');	// color scheme
-			var items 		= scheme.find('.item'); 		// all website items
-			var perpage 	= 3;							// perpage
-			var count 		= items.length;					// website items count
-			var page 		= 1;							// active page number
-			var max			= Math.ceil(count/perpage);		// total page number
-			var button 		= scheme.find('[data-color]');	// all colors buttons
-			var opener		= scheme.find('.opener');		// opener
-			var mainColor	= '--main-color';				// 
+					$.post(form.attr('action'), form.serialize(), function(data) {
+						spanSuccess.append("<span class='contact_success'>" + data.message + "</span>");
+						spanSuccess.slideDown(500).delay(4000).slideUp(500);
+						form[0].reset();
+					}).fail(function(xhr) {
+						var error = xhr.responseJSON && xhr.responseJSON.message
+							? xhr.responseJSON.message
+							: 'Mesaj gönderilemedi. Lütfen tekrar deneyin.';
+						spanSuccess.append("<span class='contact_error'>" + error + "</span>");
+						spanSuccess.slideDown(500).delay(3000).slideUp(500);
+					});
 			var textColor	= '--text-color-for-main-bg';	// 
 			var activeColor = Rewall.root.css(mainColor).replace(/\s+/g, '');	// detect main color to change it in next functions
 			
